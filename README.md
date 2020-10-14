@@ -11,7 +11,7 @@ To use it, simply fork, modify what you need to, and deploy.
 ## Usage
 
 ```
-$ SECRET_KEY_BASE=test puma
+$ SECRET_KEY_BASE=test ruby app.rb
 ```
 
 ## How Does It Work?
