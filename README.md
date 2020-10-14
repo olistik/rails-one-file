@@ -16,8 +16,7 @@ $ SECRET_KEY_BASE=test ruby app.rb
 
 ## How Does It Work?
 
-1. When you run `puma`, it looks for a file called `config.ru` if you don't tell it what to run.
-2. `config.ru` in this project defines a Rack application, that is, `TinyApp`. At the end of the file, we `run TinyApp`, because `run <rack-application` is how Rack defines what the application is.
+2. `app.rb` in this project defines a Rack application, that is, `TinyApp`. At the end of the file, we `Rack::Handler::Puma TinyApp`, because `run <rack-application` is how Rack defines what the application is and we explicitly use the Puma handler to do this.
 3. Other than that, we basically just took all the different files generated from `rails new` and put them into a single file, then took out everything you don't absolutely need to run this app.
 
 ## How Can I Expand It?
