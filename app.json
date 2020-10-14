@@ -8,5 +8,13 @@
 			"description": "Rails needs one to function.",
 			"value": "secret"
 		}
-	}
+	},
+	"buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-ruby"
+    },
+    {
+      "url": "heroku/ruby"
+    }
+  ]
 }
