@@ -1,0 +1,12 @@
+{
+	"name": "One file Rails app",
+	"description": "A one file Rails app",
+	"repository": "https://github.com/olistik/rails-one-file",
+	"keywords": ["ruby", "rails"],
+	"env": {
+		"SECRET_KEY_BASE": {
+			"description": "Rails needs one to function.",
+			"value": "secret"
+		}
+	}
+}
